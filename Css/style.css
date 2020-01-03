@@ -1,0 +1,413 @@
+/*Comments */
+/* 
+
+        1-comment style 
+        2-General  style 
+        3-Sections
+            3.0 Header Section
+            3.1 Home Section 
+            3.2 about Section 
+            3.3 Protfolio Section 
+            3.4 Service Section 
+            3.5 Price Section 
+            3.6 Team Section 
+            3.7 Blog page 
+            3.8 Contact Section 
+            3.9 FooterSection
+
+
+*/
+
+/* 
+container
+Overlay
+Opecity haver
+seaction header
+section padding
+hover effect 1 (lefto to right)
+hover effect 2 (top to bottom)
+
+*/ 
+/* General Style*/
+body
+{
+    font-family: 'Varela Round', sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    font-family: inherit;
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: Montserrat, sans-serif;
+    font-size: 2rem;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0,0,.5);
+    }
+.hover-opacity
+{
+    transition:opacity .5s;
+}
+.hover-opacity:hover
+{
+opacity: 0.8;
+ }
+ a
+ {
+     text-decoration: none;
+     list-style: none;
+ }
+ 
+.pd-y
+{
+    padding: 120px 0;
+}
+.clear
+ {
+     clear: both;
+ }
+.container{
+width: 80%;
+margin: auto;
+}
+ 
+.ltr-effect{
+    position: relative;
+}
+
+.ltr-effect:after
+{content: "";
+position:absolute;
+width: 0;
+right: 0;
+bottom: 0;
+top: 0;
+left: 0;
+background: #333;
+transition: width .5s ;
+z-index: -1 ;
+}
+.ltr-effect:hover:after{
+width: 100%;
+}
+.about-item:hover .about-item-title{
+    color: white;
+}
+ /* Header Style*/
+
+ .section-header{
+    text-align: center;
+    margin-bottom: 10px;
+   
+}
+.section-header .section-title{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.section-header .line{
+    display: block;
+    width: 3%;
+    height: 5px;
+    background-color: #6195FF;
+    margin: 0 auto 100px auto;
+}
+ 
+.header{   
+position: fixed;
+width: 100%;
+z-index: 10;
+}
+.header .logo{
+width: 40%;
+float: left;
+
+}
+.header .logo img{
+margin-top: 15px;
+width: 20%;
+}
+.header .nav{
+ width: 60%;
+ float: left;
+ text-align: right;
+}
+.header .nav > li{
+list-style: none;
+display: inline-block;
+text-align: center;
+}
+.header .nav > li > a{
+color: white;
+display: block;
+padding: 30px 20px;
+font-size: 15px;
+}
+.header .nav > li > a.active:after , .header .nav > li > a:after 
+{
+content: "";
+display: block;
+margin-top: 2px;
+height: 3px;
+background-color: #6195FF;
+}
+.header .nav > li > a:after
+{
+width: 0%;
+transition: width 0.5s;
+}
+.header .nav > li > a.active:after
+{
+width: 100%;
+}
+.header .nav > li > a:hover:after
+{
+    width: 100%;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    position: absolute;
+    background: #6195FF;
+    width: 150px;
+    left: -50%;
+    top:70%;
+    text-align: center; 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s , visibility 0.5s;
+}
+.dropdown:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown-menu a{
+    color: #FFF;
+    display: block;
+    padding: 1px;
+    
+}
+/* Home Style*/
+.home{
+    height: 100vh;
+    background-image: url(../images/background/background1.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 60%;
+}
+.home-content .title{
+    color: #FFF;
+    font-size: 4.5rem;
+    text-transform:uppercase ;
+    
+}
+
+.home-desc{
+    margin: 22px 0px;
+    font-family:  Montserrat, sans-serif;
+    color: #FFF;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    font-size: 23px;
+    text-transform: capitalize;
+}
+.home .btn{
+    min-width: 160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    border: 0;
+}
+.home .btn-start{
+    margin-right: 10px;
+    background-color: #FFF;
+}
+.home .btn-learn{
+    background-color: #6195FF;
+    color: #FFF;
+}
+/* About Section*/
+.about-content{
+    overflow: hidden;
+}
+.about-item{
+float: left;
+width: 30%;
+text-align:center;
+padding: 50px 25px;
+border: 1px solid #e8e8e8;
+}
+.about-item.mg{
+    margin: 0 5%;
+}
+.about-item .icon{
+    color: #6195FF;
+    margin-bottom: 20px;
+
+}
+ .about-item-title{
+
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    transition: color 0.5s;
+
+}
+.about-item-desc{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #999;
+}
+.about-item-link{
+    color: #6195FF;
+    text-transform: capitalize;
+}
+.protfolio-content{
+    background-color: #efefeb;
+    overflow: hidden;
+}
+
+/* Protflio Section Style*/
+
+.protfolio-item{
+    float: left;
+    width: 32%;
+    margin-bottom: 30px;
+    position: relative;
+}
+.protfolio-item:hover .layer-content{
+    opacity: 1;
+    visibility: visible;
+}
+
+.layer-content{
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+background-color: rgba(0, 0,0, .5);
+opacity: 0;
+visibility: hidden;
+transition: opacity .5s,visibility .5s;
+}
+.layer-content .layer-in
+{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 60%;
+text-align: center;
+}
+.protfolio-item:hover .layer-content .category ,
+.protfolio-item:hover .layer-content-tittle ,
+.protfolio-item:hover .layer-content a
+{
+    top: 0;
+}
+.layer-content .category{
+    display: block;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #6195FF;
+    text-transform: uppercase;
+    position: relative;
+    top:10px;
+    transition: top .6s;
+}
+.layer-content-tittle{
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: white;
+    position: relative;
+    top:31px;
+    transition: top .5s;
+    
+}
+.protfolio-item img{
+    width: 100%;
+    padding: 31px;
+}
+
+.protfolio-item.mg{
+    margin: 0 2%;
+}
+.layer-content a{
+    color: #FFF;
+    position: relative;
+    top:31px;
+    transition: top .4s;
+}
+.layer-content a i{
+    line-height: 40px;
+    display: inline-block;
+    height: 40px;
+    width:40px;
+    background-color: #6195FF;
+}
+.offer-item-content{
+    overflow: hidden;
+}
+.offer-item{
+    float: left;
+    width: 30%;
+    border: 1px #e8e8e8 solid;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 25px 30px 40px 50px;
+    position: relative;
+}
+.offer-item.mg{
+    margin:0 5% ;
+}
+/* a specific class to change the icon position from the center to top left */
+.ps{
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+.offer-title{
+text-transform: capitalize;
+font-size: 20px;
+margin-bottom: 20px;
+color: black;
+transition: color .5s;
+}
+.offer-desc{
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #999;
+}
+.offer-item-content i{
+    color: #6195FF;
+}
+.offer-item:hover .offer-title{
+    color: #FFF;
+}
