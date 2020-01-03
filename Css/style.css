@@ -31,30 +31,30 @@ hover effect 2 (top to bottom)
 /* General Style*/
 body
 {
-    font-family: 'Varela Round', sans-serif;
+font-family: 'Varela Round', sans-serif;
 
 }
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 button{
-    font-family: inherit;
+font-family: inherit;
 }
 h1,h2,h3,h4,h5,h6
 {
-    font-family: Montserrat, sans-serif;
-    font-size: 2rem;
+font-family: Montserrat, sans-serif;
+font-size: 2rem;
 }
 .overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color:rgba(0, 0,0,.5);
-    }
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color:rgba(0, 0,0,.5);
+}
 .hover-opacity
 {
     transition:opacity .5s;
@@ -62,26 +62,26 @@ h1,h2,h3,h4,h5,h6
 .hover-opacity:hover
 {
 opacity: 0.8;
- }
- a
- {
-     text-decoration: none;
-     list-style: none;
- }
- 
+}
+a
+{
+text-decoration: none;
+list-style: none;
+}
+
 .pd-y
 {
     padding: 120px 0;
 }
 .clear
- {
-     clear: both;
- }
+{
+clear: both;
+}
 .container{
 width: 80%;
 margin: auto;
 }
- 
+
 .ltr-effect{
     position: relative;
 }
@@ -104,16 +104,15 @@ width: 100%;
 .about-item:hover .about-item-title{
     color: white;
 }
- /* Header Style*/
+/* Header Style*/
 
- .section-header{
+.section-header{
     text-align: center;
     margin-bottom: 10px;
-   
 }
 .section-header .section-title{
     text-transform: capitalize;
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 10px;
 }
 .section-header .line{
@@ -123,7 +122,7 @@ width: 100%;
     background-color: #6195FF;
     margin: 0 auto 100px auto;
 }
- 
+
 .header{   
 position: fixed;
 width: 100%;
@@ -139,9 +138,9 @@ margin-top: 15px;
 width: 20%;
 }
 .header .nav{
- width: 60%;
- float: left;
- text-align: right;
+width: 60%;
+float: left;
+text-align: right;
 }
 .header .nav > li{
 list-style: none;
@@ -268,7 +267,7 @@ border: 1px solid #e8e8e8;
     margin-bottom: 20px;
 
 }
- .about-item-title{
+.about-item-title{
 
     text-transform: capitalize;
     margin-bottom: 20px;
@@ -372,6 +371,7 @@ text-align: center;
     width:40px;
     background-color: #6195FF;
 }
+/* Offer Style*/
 .offer-item-content{
     overflow: hidden;
 }
@@ -410,4 +410,62 @@ transition: color .5s;
 }
 .offer-item:hover .offer-title{
     color: #FFF;
+}
+/* Service Style*/
+.service{
+    background-color: #f7f7f7;
+}
+.service-item{
+    width: 50%;
+    float: left;
+}
+.service-item .section-header{
+    text-align: left;
+}
+.service-item .section-header .line{
+    margin: 0  0 70px 0;
+    width: 8%;
+}
+.service-item-desc{
+    padding-right:20px ;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: #999;
+}
+.service-list{
+    list-style: none;
+}
+.service-list li{
+    margin-bottom: 10px;
+    color: #999;
+}
+.service-list i{
+    color: #6195FF;
+    border: 1px #6195FF solid;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 50%;
+    }
+    .service-item img{
+        width: 100%;
+    }
+.service-bollets{
+    list-style: none;
+    text-align: center;
+}
+.service-bollets li{
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 10px 20px ;
+}
+.service-bollets li.active{
+    background-color: #6195FF;
+}
+.service-bollets li:hover{
+    background-color: #6195FF;
 }
