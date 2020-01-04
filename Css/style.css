@@ -580,4 +580,44 @@ overflow: hidden;
     .pricing-item:hover .pricing-item-text{
     color: #6195FF;
     }
+/* Testimonail Sectoin Style*/
+    .testimonail{
+    position: relative;
+    background-image: url(../images/background/background3.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+}
+.testimonail-content{
+    overflow: hidden;
+    padding: 120px 0;
+    width: 80%;
+    margin:auto;
+}
+.testimonail-item{
+    float: left;
+    width: 50%;
+    color: #FFF;
+}
+.testimonail-item .testimonail-toplayer{
+    padding: 10px 2px 40px 100px;
+    position: relative;
+}
+.testimonail-item .testimonail-toplayer img{
+    position: absolute;
+    left:10px;
+    top:10px;
+    border-radius: 50%;
+}
+.testimonail-item .testimonail-toplayer h3{
+    margin: 5px 0;
+}
+.testimonail-item .testimonail-toplayer span{
+    color: #6195FF;
+    margin-bottom: 20px;
+}
+.testimonail-desc{
+    line-height: 1.5;
+    font-size: 17px;
+}
 
