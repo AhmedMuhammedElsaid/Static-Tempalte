@@ -101,6 +101,25 @@ z-index: -1 ;
 .ltr-effect:hover:after{
 width: 100%;
 }
+.ttb-effect{
+    position: relative;
+}
+
+.ttb-effect:after
+{content: "";
+position:absolute;
+height: 0;
+right: 0;
+bottom: 0;
+top: 0;
+left: 0;
+background: #333;
+transition: height .5s ;
+z-index: -1 ;
+}
+.ttb-effect:hover:after{
+height: 100%;
+}
 .about-item:hover .about-item-title{
     color: white;
 }
@@ -469,3 +488,96 @@ transition: color .5s;
 .service-bollets li:hover{
     background-color: #6195FF;
 }
+/* Number Section*/
+.numbers{
+    position: relative;
+    height: 400px;
+    background-image: url(../images/background/background2.webp);
+    padding: 100px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.numbers-items{
+    overflow: hidden;
+}
+.numbers-item
+{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.numbers-item .icon{
+    color:#6195FF;
+    margin-bottom: 10px;
+}
+.numbers-item-tittle{
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFF;
+    
+}
+.numbers-item-text{
+    color: #FFF;
+    font-size: 30px;
+}
+.pricing{
+
+}
+.pricing-plans{
+overflow: hidden;
+}
+.pricing-item{
+    float: left;
+    width: 30%;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+    padding: 40px 15px;
+}
+.pricing-item.mg{
+    margin: 0 5%;
+}
+.pricing-item-text{
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #999;
+    transition: color .05s;
+}
+.pricing-item-permonth{
+    width: 130px;
+    height: 130px;
+    padding: 33px;
+    border-radius: 50%;
+    border: 2px solid #6195FF;
+    margin: 20px auto; 
+    transition: color .05s;
+    }
+    .pricing-item-permonth .dollar{
+        font-size: 50px;
+    }
+    .pricing-item-month{
+        text-transform: uppercase; 
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .pricing-list{
+        color: #999;
+        line-height: 1.8;
+        list-style: none;
+    }
+.pricing-item-button{
+    display: block;
+    width: 150px;
+    padding: 10px;
+    border:2px solid #7b9ede ;
+    color: #7b9ede;
+    background: none;
+    margin: 15px auto 0 auto;
+    cursor: pointer;
+    }
+    .pricing-item:hover .pricing-item-permonth{
+        color: #FFF;
+    }
+    .pricing-item:hover .pricing-item-text{
+    color: #6195FF;
+    }
+
