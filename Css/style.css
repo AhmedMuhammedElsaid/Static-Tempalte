@@ -146,6 +146,7 @@ height: 100%;
 position: fixed;
 width: 100%;
 z-index: 10;
+background: rgba(0, 0, 0, .4);
 }
 .header .logo{
 width: 40%;
@@ -769,5 +770,4 @@ border-radius: 50%;
     text-transform: uppercase;
     color: #999;
     font-size: 17px;
-
 }
