@@ -221,7 +221,7 @@ width: 100%;
 /* Home Style*/
 .home{
     height: 100vh;
-    background-image: url(../images/background/background1.webp);
+    background-image: url(../images/background/background2.webp);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -397,6 +397,7 @@ text-align: center;
 }
 .offer-item{
     float: left;
+    height: 235px;
     width: 30%;
     border: 1px #e8e8e8 solid;
     margin-bottom: 40px;
@@ -512,6 +513,7 @@ transition: color .5s;
     margin-bottom: 10px;
 }
 .numbers-item-tittle{
+    margin: 10px 0;
     font-weight: bold;
     font-size: 30px;
     color: #FFF;
@@ -520,6 +522,8 @@ transition: color .5s;
 .numbers-item-text{
     color: #FFF;
     font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
 }
 .pricing{
 
