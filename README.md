@@ -1,4 +1,3 @@
 # Static-Tempalte
-This template was created Using Css+Html "Not responsive" 
-It was  just  for  practicing and coding .
+i this template created without using any framwork or libereies only CSS and HTML.
 
