@@ -1,3 +1,3 @@
 # Static-Tempalte
-i this template created without using any framwork or libereies only CSS and HTML.
+This template built without using any framewor only CSS and HTML.
 
